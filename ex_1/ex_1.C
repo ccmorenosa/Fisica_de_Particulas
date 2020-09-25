@@ -5,17 +5,54 @@
 #pragma link C++ enum  myns::myenum;
 
 void ex_1 () {
-  TFile *file = TFile::Open("Tracks_Clusters.root");
+  // Open de Root File
+  TFile *file = TFile::Open("../ROOT_Files/Tracks_Clusters.root");
 
+  // Get the Tree from the Root File
   TTree *tree = (TTree*) file->Get("JetRecoTree");
   tree->Print();
 
+  // Pointers and variables to stores the branches data
   UInt_t npv = -1;
-  tree->SetBranchAddress("NPV", &npv);
-
   Float_t mu_avg = -1;
+  vector<float> *tracks_pt = {};
+  vector<float> *clusters_pt = {};
+  vector<float> *tracks_eta = {};
+  vector<float> *tracks_phi = {};
+  vector<float> *tracks_m = {};
+  vector<float> *tracks_vtx = {};
+  vector<float> *clusters_eta = {};
+  vector<float> *clusters_phi = {};
+  vector<float> *clusters_m = {};
+  vector<float> *particles_pt = {};
+  vector<float> *particles_eta = {};
+  vector<float> *particles_phi = {};
+  vector<float> *particles_m = {};
+  vector<float> *particles_pdgID = {};
+
+  // Get the branches address into the variables
+  tree->SetBranchAddress("NPV", &npv);
   tree->SetBranchAddress("mu_average", &mu_avg);
 
+  tree->SetBranchAddress("Tracks_pt", &tracks_pt);
+
+  tree->SetBranchAddress("Clusters_pt", &clusters_pt);
+
+  tree->SetBranchAddress("Tracks_eta", &tracks_eta);
+  tree->SetBranchAddress("Tracks_phi", &tracks_phi);
+  tree->SetBranchAddress("Tracks_m", &tracks_m);
+  tree->SetBranchAddress("Tracks_vtx", &tracks_vtx);
+  tree->SetBranchAddress("Clusters_eta", &clusters_eta);
+  tree->SetBranchAddress("Clusters_phi", &clusters_phi);
+  tree->SetBranchAddress("Clusters_m", &clusters_m);
+  tree->SetBranchAddress("Particles_pt", &particles_pt);
+  tree->SetBranchAddress("Particles_eta", &particles_eta);
+  tree->SetBranchAddress("Particles_phi", &particles_phi);
+  tree->SetBranchAddress("Particles_m", &particles_m);
+  tree->SetBranchAddress("Particles_pdgID", &particles_pdgID);
+
+
+  // Create the canvas to plot the histograms
   TCanvas *canvas = new TCanvas(
     "Canvas",
     "a first way to plot a variable",
@@ -66,12 +103,6 @@ void ex_1 () {
   hist_npv_mu->Draw("LEGO1");
   canvas->Print("H_npv_mu.svg");
   canvas->Clear();
-
-  vector<float> *tracks_pt = {};
-  tree->SetBranchAddress("Tracks_pt", &tracks_pt);
-
-  vector<float> *clusters_pt = {};
-  tree->SetBranchAddress("Clusters_pt", &clusters_pt);
 
   TH2F *hist_npv_tracks = new TH2F(
     "NPV_tracks",
@@ -148,33 +179,6 @@ void ex_1 () {
   hist_mu_clusters->Draw("LEGO1");
   canvas->Print("H_mu_clusters.svg");
 
-
-
-  vector<float> *tracks_eta = {};
-  vector<float> *tracks_phi = {};
-  vector<float> *tracks_m = {};
-  vector<float> *tracks_vtx = {};
-  vector<float> *clusters_eta = {};
-  vector<float> *clusters_phi = {};
-  vector<float> *clusters_m = {};
-  vector<float> *particles_pt = {};
-  vector<float> *particles_eta = {};
-  vector<float> *particles_phi = {};
-  vector<float> *particles_m = {};
-  vector<float> *particles_pdgID = {};
-
-  tree->SetBranchAddress("Tracks_eta", &tracks_eta);
-  tree->SetBranchAddress("Tracks_phi", &tracks_phi);
-  tree->SetBranchAddress("Tracks_m", &tracks_m);
-  tree->SetBranchAddress("Tracks_vtx", &tracks_vtx);
-  tree->SetBranchAddress("Clusters_eta", &clusters_eta);
-  tree->SetBranchAddress("Clusters_phi", &clusters_phi);
-  tree->SetBranchAddress("Clusters_m", &clusters_m);
-  tree->SetBranchAddress("Particles_pt", &particles_pt);
-  tree->SetBranchAddress("Particles_eta", &particles_eta);
-  tree->SetBranchAddress("Particles_phi", &particles_phi);
-  tree->SetBranchAddress("Particles_m", &particles_m);
-  tree->SetBranchAddress("Particles_pdgID", &particles_pdgID);
 
   TH1F *hist_track_pt = new TH1F( "Track_pt", "Track pt; pt ; Events ", 50, 400, 1500);
   TH1F *hist_track_eta = new TH1F( "Track_eta", "Track eta; eta ; Events ", 50, -3, 3);
