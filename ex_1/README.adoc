@@ -1,0 +1,23 @@
+= Tacks y Clusters
+
+== Significados de las variables
+
+pT :: Es en momentum transversal,
+el cual el perpendicular al campo magnético que se induce dentro de detector.
+
+η :: Hace referencia a la pseudo-rapidez, la cual está dada por -ln[tan(θ/2)],
+donde θ es el ángulo polar ubicando donde se detectó la partícula, este es
+medido desde el eje z considerando al detector como un cilindro.
+
+φ :: Refiere al angulo azimutal donde se detecta la partícula.
+
+m :: Corresponde a la masa de la partícula.
+
+vtx :: Es el vertíce al cual pertenece la detección.
+
+== PDGID
+
+El PDGID, siendo las siglas en ingés de Particle Data Group ID, es un número de
+identificación utilizado en las simulaciones de Monte Carlo de partículas, para
+identificar con que partícula se está trabajando, ya sea al generarla o al
+detectarla.
