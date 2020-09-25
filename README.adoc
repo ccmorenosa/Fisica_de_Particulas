@@ -1,0 +1,9 @@
+= Trabajos de _Temas avanzados de Física de Partículas_
+
+Repositorio con los trabajos asignados para la asignatura _Temas avanzados de
+Física de Partículas_. Estas asignaciones se encuentran organizadas de la
+siguiente forma:
+
+* Tracks and Clusters: *ex_1*
+
+* Jets: *ex_2*
