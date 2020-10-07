@@ -266,7 +266,7 @@ void ex_2 () {
     50,
     1,
     50,
-    30,
+    0,
     200
   );
 
@@ -276,7 +276,7 @@ void ex_2 () {
     50,
     1,
     50,
-    18,
+    0,
     200
   );
 
@@ -286,7 +286,7 @@ void ex_2 () {
     50,
     1,
     50,
-    30,
+    0,
     200
   );
 
@@ -412,7 +412,7 @@ void ex_2 () {
       hist_leadreco_pt_compare->Fill(reco_R4_pt->at(0)/1000., evtw);
       hist_leadtruth_pt_compare->Fill(truth_R4_pt->at(0)/1000., evtw);
 
-      if(std::abs(reco_R4_jvf->at(0)) < 0.5){
+      if(std::abs(reco_R4_jvf->at(0)) > 0.5){
         hist_leadreco_pt_compare_c->Fill(reco_R4_pt->at(0)/1000., evtw);
         hist_leadtruth_pt_compare_c->Fill(truth_R4_pt->at(0)/1000., evtw);
       }
@@ -422,7 +422,7 @@ void ex_2 () {
       hist_leadtrack_pt_compare->Fill(track_R4_pt->at(0)/1000., evtw);
 
       if(reco_R4_pt->size()!=0 &&
-      std::abs(reco_R4_jvf->at(0)) < 0.5){
+      std::abs(reco_R4_jvf->at(0)) > 0.5){
         hist_leadtrack_pt_compare_c->Fill(track_R4_pt->at(0)/1000., evtw);
       }
     }
