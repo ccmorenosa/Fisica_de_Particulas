@@ -5,7 +5,7 @@ lead_track_reco_cut.svg
 </title>
 <desc>
 Creator: ROOT Version 6.22/02
-CreationDate: Tue Oct  6 04:56:48 2020</desc>
+CreationDate: Wed Oct  7 23:36:28 2020</desc>
 <defs>
 </defs>
 <rect x="0.5" y="0" width="566.929" height="409.212" fill="white"/>
@@ -250,124 +250,6 @@ CreationDate: Tue Oct  6 04:56:48 2020</desc>
 <text xml:space="preserve" x="513.436" y="72.4646" fill="black" font-size="12.5746" font-family="Helvetica">  28.57</text>
 <text xml:space="preserve" x="448.076" y="88.8047" fill="black" font-size="12.5746" font-family="Helvetica">Std Dev   </text>
 <text xml:space="preserve" x="513.436" y="88.8047" fill="black" font-size="12.5746" font-family="Helvetica">  8.074</text>
-<path d="M79.8701,61.2311h 8.49683" fill="none" stroke="#000099"/>
-<path d="M94.0504,61.2311h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="91.2087" cy="61.2311" r="2.84175"/>
-</g>
-<path d="M113.886,125.679v -1.86914" fill="none" stroke="#000099"/>
-<path d="M113.886,118.127v -1.13241" fill="none" stroke="#000099"/>
-<path d="M102.547,120.968h 8.49683" fill="none" stroke="#000099"/>
-<path d="M116.728,120.968h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="113.886" cy="120.968" r="2.84175"/>
-</g>
-<path d="M125.224,168.451h 8.49683" fill="none" stroke="#000099"/>
-<path d="M139.405,168.451h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="136.563" cy="168.451" r="2.84175"/>
-</g>
-<path d="M147.902,194.972h 8.49683" fill="none" stroke="#000099"/>
-<path d="M162.082,194.972h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="159.24" cy="194.972" r="2.84175"/>
-</g>
-<path d="M170.579,214.758h 8.49683" fill="none" stroke="#000099"/>
-<path d="M184.759,214.758h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="181.917" cy="214.758" r="2.84175"/>
-</g>
-<path d="M204.594,240.02v -3.20449" fill="none" stroke="#000099"/>
-<path d="M204.594,231.132v -2.04111" fill="none" stroke="#000099"/>
-<path d="M193.256,233.974h 8.49683" fill="none" stroke="#000099"/>
-<path d="M207.436,233.974h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="204.594" cy="233.974" r="2.84175"/>
-</g>
-<path d="M215.933,255.622h 8.49683" fill="none" stroke="#000099"/>
-<path d="M230.113,255.622h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="227.272" cy="255.622" r="2.84175"/>
-</g>
-<path d="M249.949,271.456v -0.391117" fill="none" stroke="#000099"/>
-<path d="M249.949,265.381v -0.0266468" fill="none" stroke="#000099"/>
-<path d="M238.61,268.223h 8.49683" fill="none" stroke="#000099"/>
-<path d="M252.791,268.223h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="249.949" cy="268.223" r="2.84175"/>
-</g>
-<path d="M261.287,285.195h 8.49683" fill="none" stroke="#000099"/>
-<path d="M275.468,285.195h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="272.626" cy="285.195" r="2.84175"/>
-</g>
-<path d="M295.303,305.027v -0.148964" fill="none" stroke="#000099"/>
-<path d="M283.965,302.036h 8.49683" fill="none" stroke="#000099"/>
-<path d="M298.145,302.036h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="295.303" cy="302.036" r="2.84175"/>
-</g>
-<path d="M317.98,298.977v -19.1196" fill="none" stroke="#000099"/>
-<path d="M317.98,274.174v -8.77385" fill="none" stroke="#000099"/>
-<path d="M306.642,277.015h 8.49683" fill="none" stroke="#000099"/>
-<path d="M320.822,277.015h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="317.98" cy="277.015" r="2.84175"/>
-</g>
-<path d="M340.657,304.783v -9.09583" fill="none" stroke="#000099"/>
-<path d="M340.657,290.004v -5.25439" fill="none" stroke="#000099"/>
-<path d="M329.319,292.846h 8.49683" fill="none" stroke="#000099"/>
-<path d="M343.499,292.846h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="340.657" cy="292.846" r="2.84175"/>
-</g>
-<path d="M363.335,335.693v -3.08255" fill="none" stroke="#000099"/>
-<path d="M363.335,326.927v -1.96139" fill="none" stroke="#000099"/>
-<path d="M351.996,329.769h 8.49683" fill="none" stroke="#000099"/>
-<path d="M366.176,329.769h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="363.335" cy="329.769" r="2.84175"/>
-</g>
-<path d="M374.673,346.622h 8.49683" fill="none" stroke="#000099"/>
-<path d="M388.854,346.622h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="386.012" cy="346.622" r="2.84175"/>
-</g>
-<path d="M408.689,313.05v -19.6237" fill="none" stroke="#000099"/>
-<path d="M408.689,287.743v -8.9071" fill="none" stroke="#000099"/>
-<path d="M397.35,290.584h 8.49683" fill="none" stroke="#000099"/>
-<path d="M411.531,290.584h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="408.689" cy="290.584" r="2.84175"/>
-</g>
-<path d="M431.366,358.434v -18.7815" fill="none" stroke="#000099"/>
-<path d="M431.366,333.969v -8.6826" fill="none" stroke="#000099"/>
-<path d="M420.028,336.811h 8.49683" fill="none" stroke="#000099"/>
-<path d="M434.208,336.811h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="431.366" cy="336.811" r="2.84175"/>
-</g>
-<path d="M454.043,368.291v -60.7285" fill="none" stroke="#000099"/>
-<path d="M454.043,301.879v -14.0472" fill="none" stroke="#000099"/>
-<path d="M442.705,304.721h 8.49683" fill="none" stroke="#000099"/>
-<path d="M456.885,304.721h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="454.043" cy="304.721" r="2.84175"/>
-</g>
-<path d="M476.72,361.588v -58.9862" fill="none" stroke="#000099"/>
-<path d="M476.72,296.918v -13.6649" fill="none" stroke="#000099"/>
-<path d="M465.382,299.76h 8.49683" fill="none" stroke="#000099"/>
-<path d="M479.562,299.76h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="476.72" cy="299.76" r="2.84175"/>
-</g>
-<path d="M499.398,368.291v -0.224835" fill="none" stroke="#000099"/>
-<path d="M499.398,362.382v -6.90741" fill="none" stroke="#000099"/>
-<path d="M488.059,365.224h 8.49683" fill="none" stroke="#000099"/>
-<path d="M502.239,365.224h 8.49683" fill="none" stroke="#000099"/>
-<g fill="#0000ff">
-<circle cx="499.398" cy="365.224" r="2.84175"/>
-</g>
 <path d="M147.902,56.4719h 8.49683" fill="none" stroke="#000099"/>
 <path d="M162.082,56.4719h 8.49683" fill="none" stroke="#000099"/>
 <g fill="#ffcc00">

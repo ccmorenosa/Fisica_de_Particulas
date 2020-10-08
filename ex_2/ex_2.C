@@ -363,22 +363,6 @@ void ex_2 () {
     200
   );
 
-  TH1F *hist_leadtruth_pt_compare_c = new TH1F(
-    "Lead Truth-jet [Cuts]",
-    "Leading jet pT; pT (GeV);Events",
-    20,
-    0,
-    200
-  );
-
-  TH1F *hist_leadtrack_pt_compare_c = new TH1F(
-    "Lead Track-jet [Cuts]",
-    "Leading jet pT; pT (GeV);Events",
-    20,
-    0,
-    200
-  );
-
 
   // Without cuts
   TH1F *hist_leadreco_pt_compare = new TH1F(
@@ -414,17 +398,11 @@ void ex_2 () {
 
       if(std::abs(reco_R4_jvf->at(0)) > 0.5){
         hist_leadreco_pt_compare_c->Fill(reco_R4_pt->at(0)/1000., evtw);
-        hist_leadtruth_pt_compare_c->Fill(truth_R4_pt->at(0)/1000., evtw);
       }
     }
 
     if(track_R4_pt->size()!=0){
       hist_leadtrack_pt_compare->Fill(track_R4_pt->at(0)/1000., evtw);
-
-      if(reco_R4_pt->size()!=0 &&
-      std::abs(reco_R4_jvf->at(0)) > 0.5){
-        hist_leadtrack_pt_compare_c->Fill(track_R4_pt->at(0)/1000., evtw);
-      }
     }
 
   }
@@ -438,10 +416,6 @@ void ex_2 () {
   hist_leadreco_pt_compare_c->SetMarkerStyle(20);
   hist_leadreco_pt_compare_c->SetMarkerColor(kRed);
   hist_leadreco_pt_compare_c->Draw("");
-
-  hist_leadtruth_pt_compare_c->SetMarkerStyle(20);
-  hist_leadtruth_pt_compare_c->SetMarkerColor(kBlue);
-  hist_leadtruth_pt_compare_c->Draw("Same");
 
   // Draw histograms without cuts
   hist_leadreco_pt_compare->SetMarkerStyle(20);
@@ -461,10 +435,6 @@ void ex_2 () {
   hist_leadreco_pt_compare_c->SetMarkerStyle(20);
   hist_leadreco_pt_compare_c->SetMarkerColor(kRed);
   hist_leadreco_pt_compare_c->Draw("");
-
-  hist_leadtrack_pt_compare_c->SetMarkerStyle(20);
-  hist_leadtrack_pt_compare_c->SetMarkerColor(kBlue);
-  hist_leadtrack_pt_compare_c->Draw("Same");
 
   // Draw histograms without cuts
   hist_leadreco_pt_compare->SetMarkerStyle(20);
@@ -752,7 +722,7 @@ void ex_2 () {
     "Leading jet reco R10 pT R10; pT(GeV); Events",
     20,
     0,
-    100
+    3000
   );
 
   TH1F *hist_reco_R10_trimmed_pt = new TH1F(
@@ -760,7 +730,7 @@ void ex_2 () {
     "Leading jet reco R10 pT R10; pT(GeV); Events",
     20,
     0,
-    100
+    3000
   );
 
   TH1F *hist_truth_R10_pt = new TH1F(
@@ -768,7 +738,7 @@ void ex_2 () {
     "Leading jet truth R10 pT; pT(GeV); Events",
     20,
     0,
-    100
+    3000
   );
 
   TH1F *hist_truth_R10_trimmed_pt = new TH1F(
@@ -776,7 +746,7 @@ void ex_2 () {
     "Leading jet truth R10 pT; pT(GeV); Events",
     20,
     0,
-    100
+    3000
   );
 
   TH1F *hist_reco_R10_m = new TH1F(
@@ -784,7 +754,7 @@ void ex_2 () {
     "Leading jet reco R10 mass; Mass; Events",
     20,
     0,
-    100
+    2000
   );
 
   TH1F *hist_reco_R10_trimmed_m = new TH1F(
@@ -792,7 +762,7 @@ void ex_2 () {
     "Leading jet reco R10 mass; Mass; Events",
     20,
     0,
-    100
+    2000
   );
 
   TH1F *hist_truth_R10_m = new TH1F(
@@ -800,7 +770,7 @@ void ex_2 () {
     "Leading jet truth R10 mass; Mass; Events",
     20,
     0,
-    100
+    2000
   );
 
   TH1F *hist_truth_R10_trimmed_m = new TH1F(
@@ -808,7 +778,7 @@ void ex_2 () {
     "Leading jet truth R10 mass; Mass; Events",
     20,
     0,
-    100
+    2000
   );
 
   for (i = 0; i < nentries; i++) {
@@ -826,7 +796,7 @@ void ex_2 () {
       hist_truth_R10_pt->Fill(truth_R10_pt->at(0)/1000.,evtw);
       hist_truth_R10_trimmed_pt->Fill(truth_R10_trimmed_pt->at(0)/1000., evtw);
 
-      hist_truth_R10_m->Fill(truth_R10_m->at(0)/1000.);
+      hist_truth_R10_m->Fill(truth_R10_m->at(0)/1000., evtw);
       hist_truth_R10_trimmed_m->Fill(truth_R10_trimmed_m->at(0)/1000., evtw);
     }
   }
