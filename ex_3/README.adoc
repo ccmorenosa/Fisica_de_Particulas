@@ -1,0 +1,25 @@
+= TTBar
+
+[IMPORTANT]
+====
+Los valores dan diferentes si se hacen por macro a si se hacen con notebook a
+pesar de que se tienen el mismo código, con la macro el resultado es:
+
+All events:14945674
+
+Cut1:14656440
+
+Cut2:14656440
+
+Cut3:11533696
+
+Cut4:61831
+
+Cut5:61514
+
+Cut6:10803
+
+Cut7:8556
+
+Cut8:7179
+====
