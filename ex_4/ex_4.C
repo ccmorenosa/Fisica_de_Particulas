@@ -5,7 +5,7 @@
 void ex_4 () {
   // %%codecell
   // Open de Root File
-  TFile *file = TFile::Open("/home/afmorenosa/Documents/Projects/ROOT/ROOT_Files/ttbar_8TeV.root");
+  TFile *file = TFile::Open("/home/ccmorenosa/Documents/Projects/ROOT/ROOT_Files/ttbar_8TeV.root");
 
   // Get the Tree from the Root File
   TTree *tree = (TTree*) file->Get("mini");
